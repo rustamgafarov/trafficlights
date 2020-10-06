@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    height: 600px;
+    width: 600px;
+    background-color: blue;
+    /*border-radius: 50%;*/
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.mainDiv > div {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 0px solid black;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: red;
+    border-radius: 50%;
+    line-height: 1.3;
+    position: relative;
+    animation-name: topin;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes topin {
+    0% {
+        top: -1000px;
+    }
+
+    100% {
+    top: 0px;
+    }
+}
+.yellow1 {
+    background-color: yellow;
+    border-radius: 50%;
+    animation-name: btn;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+.yellow1:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+.yellow2 {
+    background-color: green;
+    border-radius: 50%;
+    animation-name: btn;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
